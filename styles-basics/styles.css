@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inconsolata&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+}
+
+header {
+    background-image: linear-gradient(to right, lightblue, lightgreen);
+    border-radius: 0.6rem;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+nav {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+#main-section {
+    margin: 0.6rem;
+}
+
+#article-heading {
+    font-size: 1.5rem;
+    text-shadow: 0.25rem 0.25rem turquoise;
+    text-align: center;
+    opacity: 0.8;
+    font-family: "DM Sans", sans-serif;
+}
+
+#article-paragraph {
+    margin-top: 0.2rem;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+#main-aside {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-image: linear-gradient(to right, lightblue, lightgreen);
+    box-shadow: 0 0.3rem 0.3rem #bbb;
+}
+
+#aside-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: darkblue;
+    font-family: "DM Sans", sans-serif;
+}
+
+#aside-paragraph {
+    margin-top: 0.2rem;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 760px) {
+    header {
+        text-align: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem;
+    }
+
+    #header-heading {
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+
+    nav {
+        margin-right: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .nav-link {
+        margin: 0 0.2rem;
+    }
+    
+    #main-section {
+        margin: 0.6rem;
+        display: flex;
+    }
+
+    #main-article {
+        margin: 2rem 1.5rem;
+    }
+
+    #article-heading {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    #article-paragraph {
+        font-size: 1.2rem;
+    }
+
+    #main-aside {
+        margin: 2rem 1.5rem;
+        flex: 0 0 25%;
+    }
+
+    #aside-heading {
+        font-size: 2rem;
+    }
+
+    #aside-paragraph {
+        font-size: 1.1rem;
+    }
+}
