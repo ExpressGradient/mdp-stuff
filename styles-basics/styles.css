@@ -1,34 +1,50 @@
+/*Import Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inconsolata&display=swap');
 
+/*This is a mobile first design, so all the styling for mobile are applied first and media queries are used to apply for other screens*/
+/*This would be the default styles*/
+
+/*Style for whole webpage*/
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Inconsolata", monospace;
 }
 
+/*Select HTML elements directly*/
 header {
+    /*Apply linear gradient for a color shade*/
     background-image: linear-gradient(to right, lightblue, lightgreen);
+    /*For rounded borders*/
+    /*rems take sizes from root element, relative*/
     border-radius: 0.6rem;
+    /*For space outside the border*/
     margin: 0.6rem;
+    /*For space inside the border*/
     padding: 0.6rem;
+    /*For aligning text*/
     text-align: center;
+    /*Choosing font family*/
     font-family: "DM Sans", sans-serif;
 }
 
 nav {
+    /*Apply margin in specific direction*/
     margin-top: 5px;
     font-size: 18px;
 }
 
+/*Styling elements by id*/
 #main-section {
     margin: 0.6rem;
 }
 
 #article-heading {
     font-size: 1.5rem;
+    /*Add shadow effect to text*/
     text-shadow: 0.25rem 0.25rem turquoise;
     text-align: center;
     opacity: 0.8;
@@ -37,6 +53,7 @@ nav {
 
 #article-paragraph {
     margin-top: 0.2rem;
+    /*The opacity of the element*/
     opacity: 0.7;
     font-size: 1rem;
 }
@@ -46,6 +63,7 @@ nav {
     padding: 1rem;
     border-radius: 0.3rem;
     background-image: linear-gradient(to right, lightblue, lightgreen);
+    /*Add shadow effect to whole element*/
     box-shadow: 0 0.3rem 0.3rem #bbb;
 }
 
@@ -72,17 +90,23 @@ nav {
     border-radius: 0.2rem;
 }
 
+/*The animation behavior*/
 @keyframes anim-div-rotate {
+    /*Starting of the animation*/
     0% {
         transform: rotate(0deg);
     }
 
+    /*Ending of the animation*/
     100% {
         transform: rotate(360deg);
     }
 }
 
+/*Apply different styles when the element is in hover state*/
 #anim-div:hover {
+    /*Shorthand rule for applying animation*/
+    /*Smoothing function, duration, animation name, number of times to be repeated, ....*/
     animation: ease-in-out 1.5s anim-div-rotate infinite;
 }
 
@@ -90,11 +114,16 @@ nav {
     border-radius: 50%;
 }
 
+/*CSS Grid*/
 #grid-container {
     display: grid;
+    /*Divide the width into 3 columns with ratio 1:2:1*/
     grid-template-columns: 1fr 2fr 1fr;
+    /*Divide the height into 2 rows with ratio 1:3*/
     grid-template-rows: 1fr 3fr;
+    /*Gap between columns*/
     grid-column-gap: 0.5rem;
+    /*Gap between rows*/
     grid-row-gap: 0.5rem;
 }
 
@@ -154,6 +183,7 @@ nav {
 }
 
 #first-bar {
+    /*Add a start delay to animation*/
     animation-delay: 150ms;
 }
 
@@ -169,11 +199,18 @@ nav {
     animation-delay: 200ms;
 }
 
+/*All the styles below kicks in when the device width is more than 760px*/
+/*Apply new styles or override the default styles*/
 @media screen and (min-width: 760px) {
     header {
         text-align: unset;
+        /*CSS Flexbox*/
         display: flex;
+        /*Justify the items to have equal space in between them*/
+        /*Also known as Main Axis Alignment*/
         justify-content: space-between;
+        /*Align the items in center in the axis*/
+        /*Also known as Cross Axis Alignment*/
         align-items: center;
         padding: 0.8rem;
     }
