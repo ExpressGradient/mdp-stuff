@@ -4,7 +4,7 @@
 /*This is a mobile first design, so all the styling for mobile are applied first and media queries are used to apply for other screens*/
 /*This would be the default styles*/
 
-/*Style for whole webpage*/
+/*Style for every element*/
 * {
     margin: 0;
     padding: 0;

@@ -1,0 +1,12 @@
+#wikipedia-meta p {
+    margin: 5px 0;
+}
+
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
